@@ -1,0 +1,600 @@
+$main-color:#0DA9EE;
+$dark-bg:#2B2B2B;
+$font-color:#171717;
+$normal-font:Arial, Helvetica,"BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji, "sans-serif","SFMono-Regular","Consolas","Liberation Mono","Menlo",Courier,monospace;
+$title-font:36px;
+$small-title:24px;
+
+*{
+    padding:0;
+    margin:0;
+    outline:none;
+}
+
+// 「产品线/项目」
+.homePic {
+    width: 100%;
+    // background-color: pink;
+    margin-top: 20px;
+    .picbox{
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        // background-color: yellow;
+        img {
+            width: 400px;
+            height: 223px;
+        } 
+        .pic{
+            
+            vertical-align: middle;
+            h2{
+                display: inline;
+                font-family: Arial-BoldMT;
+                font-size: 48px;
+                vertical-align: middle;
+                margin-top: 10px;
+                line-height: 58px;
+                color: #0DA9EE;
+            }
+            p{vertical-align: middle;
+                display: inline;
+                font-family: "Helvetica-Light","Arial-Light";
+                font-weight: 300;
+                line-height: 30px;
+                font-size: 31px;
+                color: #2B2B2B;
+                margin-left: 10px;
+            }
+        }
+       
+        .left {
+           div{
+               float: left;
+           }
+        }
+        .right{  
+            // background-color: blue;
+           div{
+            float: right;
+           }
+        }
+    }
+   
+}
+
+//「岂止于工具」
+.toolComponent{
+    width: 100%;
+    height: 665px;
+    // background-image: linear-gradient(-213deg, #3095F7 0%, #1E63DF 100%);
+    background-color: #2A84EE;
+    position: relative;
+    margin-top: 40px;
+    // 导航部分
+    h1{
+        display: inline-block;
+        margin-top: 60px;
+        font-size: $title-font;
+        color: #FFFFFF;
+    }
+    p{
+        margin-top: -10px;
+        margin-bottom: 10px;
+        font-family: PingFangSC-Light;
+        font-size: $small-title;
+        color: #FFFFFF;
+    }
+    #toolMenu {
+        display: flex;
+        margin-top: 30px;
+        width: 1182px;
+        padding:0px;
+        transform: translate(-50%,0);
+        left: 50%;
+        position: absolute;
+        border-bottom: 2px solid #81BAF7;
+        
+        .ant-menu ,
+        .ant-menu-light ,
+        .ant-menu-root ,
+        .ant-menu-horizontal { 
+
+            background-color: #2A84EE;
+            border: none;
+        }
+            li{
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 23px;
+                color:white;
+                opacity: 0.8;
+                line-height: 80px;
+                text-align: center;
+                margin-left: 0;
+                margin-right: 116px;
+                list-style: none;
+                // background-color:blue;
+            }
+            li:hover{
+                border-bottom: 3px solid white;
+            }
+            .menuActive{
+                opacity: 1;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                font-weight: 400;
+                border-bottom: 3px solid white;
+            }
+            li:last-child{
+                margin-right: 2px;
+            }
+        
+       
+    }
+
+    //底部对应展示图
+    #content{
+        position: absolute;
+        top: 340px;
+        width: 1108px;
+        transform: translate(-50%,0);
+        left: 50%;
+        // background-color:pink;
+        height: 270px;
+        img {
+            left: 0;
+            width: 466px;
+            height: 270px;
+            position: absolute;
+        }
+        h2{
+            left: 554px;
+            top: 14px;
+            position: absolute;
+            font-family: PingFangSC-Medium;
+            font-size: 26px;
+            color: #FFFFFF;
+            
+        }
+        p{
+            left: 554px;
+            top: 84px;
+            width: 554px;
+            position: absolute;
+            text-align: left;
+            font-family: PingFangSC-Light;
+            font-size: 21px;
+            color: #FFFFFF;
+            line-height: 32px;
+        }
+        #linkicon{
+            background-color:blue;
+            position: absolute;
+            p{      
+                top: 240px;
+                // background-color: yellow;
+                font-size: 18px;
+                color: #0DEEE5;
+                line-height: 24px;
+                font-family: "PingFangSC-Regular";
+            }
+            img{    
+                top: 236px; 
+                left: 634px;
+                display: inline-block;    
+                // background-color: yellow;
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+   
+}
+
+
+
+//走马灯整个模块
+.Carousel{
+    width: 100%;
+    position: relative;
+    //走马灯上面的图片
+    .CarouseIllPic{
+        width: 100%;
+        height: 607px;
+        overflow: hidden;
+        background-image: linear-gradient(-194deg, #313030 0%, #090909 100%);
+    h2{
+        margin-top: 60px;
+        font-size: $title-font;
+        color: #FFFFFF;
+    }
+    p{
+        margin-top: 18px;
+        font-size:$small-title;
+        color: #D5D5D5;
+    }
+
+    //走马灯上面的插画
+    .IllPic{
+        width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        margin-top:-50px;
+        // background-color: yellow;
+        img{
+            width: 300px;
+            height: 260px;
+        }
+        .activeIll{
+            h3{
+                font-size: 26px;
+                color: $main-color;
+                width: 216px;
+            }
+            p{
+                font-size: 16px;
+                color: #0DA9EE;
+                // text-align: center;
+                line-height: 24px;
+                width: 216px;
+            }
+        }
+        .norIll{
+           
+            h3{
+                font-size: 26px;
+                color: #FFFFFF;
+                text-align: center;
+                width: 216px;
+            }
+            p{
+                font-size: 16px;
+                color: #D5D5D5;
+                text-align: center;
+                line-height: 24px;
+                width: 216px;
+            }
+        }
+        .IllPic1{ 
+            width: 300px;
+            height: 400px;
+            display: block;
+            // background-color: red;
+            h3,
+            p{
+                float: left;
+                margin:0 auto;
+            }
+            p{
+                margin-top: 18px;
+            }   
+        }
+            
+        
+        .IllPic2{ 
+            width: 300px;
+            height: 400px;
+            // background-color: blue;
+            h3,
+            p{
+             margin:0 auto;
+            }
+            p{
+                margin-top: 18px;
+            }
+            // .activeArrow{
+            //     width: 26px;
+            //     height: 18px;
+            //     margin: 0 auto;
+            //     bottom: 0;
+            //     img{
+            //         width: 26px !important;
+            //         height: 18px ;
+            //     }
+            //     .norArrow{
+            //         display: none !important;
+            //     }
+        }
+        .IllPic3{ 
+            width: 300px;
+            height: 400px;
+            // background-color: red;
+            h3,
+            p{
+             margin:0 60px;
+            }
+            p{
+                margin-top: 18px;
+            }
+        }
+        .IllPic4{ 
+            width: 300px;
+            height: 400px;
+            // background-color: blue;
+            h3,
+            p{
+                float: right;
+                margin:0 auto;
+            }
+            p{
+                margin-top: 18px;
+            }
+        }
+    }
+
+
+    }
+
+
+    .Carouselbox{
+        width: 1460px;
+        margin: 0 auto;
+        position: relative;
+        // background: pink;
+        #preArrow{
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            bottom: 50%;
+            margin-bottom: -48px;
+  
+            img{
+                width: 96px;
+                height: 96px;
+         
+            }
+         }
+         #nextArrow{
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            bottom: 50%;
+            margin-bottom: -48px;
+            right: 0;
+            img{
+                width: 96px;
+                height: 96px;
+               
+                
+            }
+         }
+    }
+    .contentStyle{
+        // display: block;
+        // height: 460px;
+        margin: 0 auto;
+        width: 1200px;
+        height: 830px;
+        // background-color: pink;
+    };
+    
+}
+
+//轮播图1
+.Carpage {
+    height:863px;
+    width: 1200px;
+    margin: 60px auto;
+    position: relative;
+    // background-color: yellow !important;
+    .pagePic{
+        display: block;
+        margin: 0 auto;
+        width: 555px;
+        height: 734px;
+        img{
+            width: 555px;
+            height: 734px;
+            position: absolute;
+            right: 30px;
+        }
+         }
+        h2{        
+            position: absolute;
+            left:30px;
+            top: 45px;
+            font-size: $title-font;
+            color: #171717; 
+        }
+        h3{
+            position: absolute;
+            left:30px;
+            top: 134px;
+            width: 506px;
+            font-weight: 400;
+            font-size: 24px;
+            color: #797979;
+            text-align: justify;
+        }
+        .pageContent{
+            position: absolute;
+            width: 502px;
+            left:30px;
+            top: 290px;
+            p{
+            position: absolute;
+            font-size: 22px;
+            color: #171717;
+            text-align: justify;
+            line-height: 41px;
+            }
+            p:nth-child(2){
+                top: 100px;
+            }
+            p:last-child{
+                top: 270px;
+            }
+    }
+}
+
+//轮播图2
+.CarMid {
+    position: relative;
+    height:863px;
+    width: 1200px;
+    margin: 60px auto;
+    position: relative;
+    // background-color: yellow !important;
+    .PrimaryPic{
+        display: block;
+        width: 555px;
+        height: 734px;
+        img{
+            width: 555px;
+            height: 734px;
+            position: absolute;
+            left: 30px;
+            margin-bottom: 60px;
+        }
+    }
+    .PrimaryContent{
+        position: absolute;
+        width: 490px;
+        top: 0;
+        left: 300px;
+        display: block;
+        .content{
+            position: absolute;
+            left: 400px;
+            width: 490px;
+            text-align : left;
+        }
+        h4{
+            font-size: 26px;
+            color: $font-color;
+        }
+        p{
+            font-size: 16px;
+            color: #6A6A6A;
+            line-height: 24px;
+        }
+        .para1{
+            position: absolute;
+            top: 70px;
+        }
+        .para2{
+            position: absolute;
+            top: 331px;
+        }
+        .para3{
+            position: absolute;
+            top:512px;
+        }
+    }
+}
+
+//轮播图3
+.CarPrimary {
+    position: relative;
+    height:863px;
+    width: 1200px;
+    margin: 60px auto;
+    position: relative;
+    // background-color: yellow;
+        .content{
+            position: absolute;
+            left: 400px;
+            width: 490px;
+            text-align : left;
+        }
+        h4{
+            font-size: 26px;
+            color: $font-color;
+        }
+        p{
+            font-size: 16px;
+            color: #6A6A6A;
+            line-height: 24px;
+        }
+        .para1{
+            position: absolute;
+            top: 70px;
+            left: 40px;
+        }
+        .para2{
+            position: absolute;
+            top: 70px;
+            left: 636px;
+        }
+        .para3{
+            width: 1200px;
+            height: 462px;
+            position: absolute;
+            left: 0;
+            top: 280px;
+            // background-color: pink;
+            img{
+                width: 1200px;
+                height: 382px;
+                position: absolute;
+                left: 0;
+            }
+            p{
+                font-size: 18px;
+                color: #171717;
+                position: absolute;
+                bottom: 0;
+                span{
+                    color:$main-color;
+                }
+            }
+        }
+        
+    
+    
+}
+
+//轮播图4
+.CarFlow {
+    position: relative;
+    height:863px;
+    width: 1200px;
+    margin: 60px auto;
+    position: relative;
+    // background-color: yellow;
+    .FlowPic{
+        width: 1200px;
+        height: 526px;
+        position: absolute;
+        left: 0;
+        img{
+            width: 1200px;
+            height: 526px;
+        }
+    }
+        .content{
+            position: absolute;
+            left: 400px;
+            width: 338px;
+            text-align : left;
+        }
+        h4{
+            font-size: 26px;
+            color: $font-color;
+        }
+        p{
+            font-size: 16px;
+            color: #6A6A6A;
+            line-height: 24px;
+        }
+
+            .para1 {
+                position: absolute;
+                top: 570px;
+                left: 20px;
+            }
+            .para2 {
+                position: absolute;
+                top: 570px;
+                left: 430px;
+            }
+            .para3 {
+                position: absolute;
+                top: 570px;
+                left: 840px;
+            }
+        
+       
+    }

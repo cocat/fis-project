@@ -1,0 +1,224 @@
+$main-color:#0DA9EE;
+$dark-bg:#2B2B2B;
+$normal-font:Arial, Helvetica,"BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji, "sans-serif","SFMono-Regular","Consolas","Liberation Mono","Menlo",Courier,monospace;
+
+//字体颜色
+$font-dark:#2B2B2B;
+$font-grey:#9F9F9F;
+
+$margin-block:40px;
+
+*{
+    padding:0;
+    margin:0;
+    outline:none;
+    font-family: $normal-font;
+}
+
+//全局导航背景显示与否
+#navBg{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color:$dark-bg;
+    opacity: 1;
+    z-index: -1;
+}
+.nextbox{
+    overflow: hidden;
+    padding-top: 70px;
+    height: 20px;
+    width: 100%;
+}
+
+
+
+//主要内容区域
+.mainbox{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+//侧边栏模块了
+.sideFlow{
+    float: left;
+}
+.mainMenu{
+    font-weight: bold;
+    font-size: 14px;
+    color: #2B2B2B;
+    line-height: 22px;
+    
+}
+.ant-menu-submenu-title{
+    float: left;
+    margin-left: 30px;
+    width: 226px !important;
+    font-size: 14px;
+line-height: 22px;
+}
+.subMenuItem {
+    float: left;
+    margin-left: 7px;
+    width: 249px !important;
+    font-size: 14px;
+color: #898989;
+line-height: 22px;
+}
+.ArrowDisapper{
+    .ant-menu-submenu-arrow{
+        visibility:hidden !important ;
+        // display: none !important;
+    }
+   
+}
+
+
+//内容模块
+
+
+
+.DetailBox{
+    width: 884px;
+    float: right;
+    text-align: left;
+
+    //大标题的模块
+    .blockAll {
+        margin-top: 42px;
+    }
+    //小标题模块
+    .block {
+        margin-top: $margin-block;
+    }
+
+    // 大标题title1；小标题title2 固定样式
+    .title1{
+        font-size: 36px;
+        color: $font-dark;
+        line-height: 46px;
+    }
+    .title2{
+        font-size: 26px;
+    color: #2B2B2B;
+    line-height: 36px;
+    }
+
+    //info字体样式
+    .info {
+        font-size: 16px;
+        color:$font-grey;
+        line-height: 22px;
+    }
+
+    //普通字体样式
+    .nor_font,
+    p{
+        font-size: 16px;
+        color: $font-dark;
+        line-height: 22px;
+    }
+
+    //blue_link 特殊的链接样式
+    .blue_link{
+        font-size: 16px;
+        color:$main-color;
+        line-height: 24px;
+        height: 30px;
+        padding: 3px 12px;
+        margin: 0 6px;
+        display: inline-block;
+        background-color: #D6F1FC;
+        border-radius: 15px;
+        border-radius: 15px;
+        // vertical-align: bottom;
+        img{
+            margin: 0  0  0 6px ;
+            width: 14px;
+            height: 14px;
+            line-height: 24px;
+        }
+    }
+
+    //info提示信息
+    .info_yellow{
+        width: 100%;
+        padding: 20px 20px 7px 20px;
+        background: #FFFAEC;
+        border-left: 3px solid #F5C723;
+        margin-bottom: 20px;
+    }
+    .info_red{
+        background: #FFEDEF;
+    }
+    //代码块样式 
+    .code_black{
+        width: 100%;
+        padding: 20px 20px 7px 20px;
+        background: #1B1A1E ;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        vertical-align: middle;
+        p{
+            color: white;
+        }
+    }
+    //小灰色的代码块
+    .code_grey{
+        padding: 3px;
+        background-color:  #EEEEEE;
+        margin:0 5px;
+    }
+
+    //图片上传 字体样式
+    .fileFont{
+        width: 100%;
+        // background-color: pink;
+        .fileIcon{
+            line-height: 24px;
+            width: 16px;
+            height: 18px;
+            margin-bottom: 2px;
+        }
+        .picTitle{
+            display: inline-block;
+            margin-left: 10px;
+            color: $font-grey;
+            line-height: 24px;
+            font-weight: 500;
+        }
+        .filePic{
+            width: 884px;
+            margin-bottom: 24px;
+            box-shadow: 0 5px 13px 0 rgba(0,0,0,0.14);
+            img{
+                width: 884px;
+            }
+            
+        }
+    }
+    //文字段落样式
+    .para{
+       p{ line-height: 28px;}
+    }
+
+    .link_blue{ width: 100%;
+        padding: 3px 3px;
+        background:#CFEEFC ;
+        margin-bottom: 20px;
+        vertical-align: middle;
+        color:$main-color;
+        font-weight: 500;
+            
+        
+    }
+
+    //list样式
+    ul{
+        margin-left: 20px;
+        li{
+            padding: 5px;
+            font-size: 16px;
+        } 
+    }
+}
