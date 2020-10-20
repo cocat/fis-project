@@ -9,8 +9,6 @@ class Content extends React.Component {
         this.node.scrollIntoView();
     }
 
-
-
     render() {
         return (
             <div ref={node => this.node = node}>

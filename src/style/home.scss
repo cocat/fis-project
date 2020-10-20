@@ -33,7 +33,7 @@ $small-title:24px;
                 font-family: Arial-BoldMT;
                 font-size: 48px;
                 vertical-align: middle;
-                margin-top: 10px;
+                // margin-top: 10px;
                 line-height: 58px;
                 color: #0DA9EE;
             }
@@ -109,7 +109,7 @@ $small-title:24px;
                 font-size: 23px;
                 color:white;
                 opacity: 0.8;
-                line-height: 80px;
+                line-height: 81px;
                 text-align: center;
                 margin-left: 0;
                 margin-right: 116px;
@@ -117,9 +117,11 @@ $small-title:24px;
                 // background-color:blue;
             }
             li:hover{
+                line-height: 80px;
                 border-bottom: 3px solid white;
             }
             .menuActive{
+                line-height: 79px;
                 opacity: 1;
                 font-family: Arial, Helvetica, sans-serif;
                 color: white;
@@ -330,8 +332,9 @@ $small-title:24px;
 
     .Carouselbox{
         width: 1460px;
-        margin: 0 auto;
         position: relative;
+        transform: translate(-50%,0);
+        left: 50%;
         // background: pink;
         #preArrow{
             position: absolute;
