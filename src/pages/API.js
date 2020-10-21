@@ -6,7 +6,7 @@ const API = () => {
         <div>
             <ul>
                 <div id="navBg"></div>
-                <h2 className="nextbox"></h2>
+                <div className="nextbox"></div>
                 <div className="mainbox">
                 </div>
                 <div style={{ height: "600px" }} >

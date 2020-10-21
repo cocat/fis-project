@@ -105,9 +105,9 @@ class Nav extends React.Component {
                                         <img src={require("../assets/icon/icon_export_white.png")} alt="logo" />
                                     </li>
                                 </ul>
-                                <a id="githubLink">
+                                <div id="githubLink">
                                     <img src={require("../assets/icon/icon_github.png")} alt="githubLink" />
-                                </a>
+                                </div>
                             </div>
 
                         </div>

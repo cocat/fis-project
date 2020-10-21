@@ -52,7 +52,7 @@ class MyCarousel extends React.Component {
             slidesToScroll: 1,
             beforeChange: (current, next) => {
                 this.setState({ slideIndex: next })
-                console.log(this.state.slideIndex);
+                // console.log(this.state.slideIndex);
             }
         };
 
