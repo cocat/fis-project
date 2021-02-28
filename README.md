@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+首页实现效果
+![image](https://github.com/cocat/fis-project/blob/master/首页_线上效果.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
